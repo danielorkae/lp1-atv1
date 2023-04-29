@@ -20,7 +20,10 @@ int main(int argc, char *argv[])
     return 0;
 }
 
-// Valida os argumentos passados para o programa
+/// @brief Valida os argumentos passados para o programa.
+/// @param argc 
+/// @param argv 
+/// @return 
 bool validate_args(int argc, char *argv[])
 {
     // Verifica se o número de argumentos é suficiente
@@ -38,7 +41,9 @@ bool validate_args(int argc, char *argv[])
     return true;
 }
 
-// Mapeia a operação a ser realizada
+/// @brief Mapeia a operação a ser realizada.
+/// @param operation 
+/// @param params 
 void map_operation(char *operation, char *params[])
 {
     if (strcasecmp(operation, "q") == 0)
