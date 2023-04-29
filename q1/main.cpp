@@ -20,8 +20,10 @@ int main(int argc, char *argv[])
     return 0;
 }
 
+// Valida os argumentos passados para o programa
 bool validate_args(int argc, char *argv[])
 {
+    // Verifica se o número de argumentos é suficiente
     if (argc < 3)
     {
         cout << "Modo de usar: " << argv[0] << " <forma> <parametros>" << endl;
@@ -36,9 +38,10 @@ bool validate_args(int argc, char *argv[])
     return true;
 }
 
+// Mapeia a operação a ser realizada
 void map_operation(char *operation, char *params[])
 {
-    if (strcasecmp(operation, "retangulo") == 0)
+    if (strcasecmp(operation, "q") == 0)
     {
         cout << "Area do quadrado: " << square_area(atof(params[0])) << endl;
         return;
