@@ -67,7 +67,7 @@ vector<Student> get_students()
 void save_students(vector<Student> students)
 {
     fstream file;
-    file.open("students.txt", ios::out | ios::app);
+    file.open("students.txt", ios::out);
 
     for (int i = 0; i < students.size(); i++)
     {
