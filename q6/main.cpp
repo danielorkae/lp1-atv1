@@ -86,9 +86,6 @@ void save_musics(vector<string> musics)
 {
     fstream file;
     file.open("musics.txt", ios::out);
-    file.close();
-
-    file.open("musics.txt", ios::out | ios::app);
 
     for (int i = 0; i < musics.size(); i++)
     {
