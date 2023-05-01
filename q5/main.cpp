@@ -42,6 +42,8 @@ int main()
     return 0;
 }
 
+/// @brief Retorna os alunos salvos no arquivo students.
+/// @return
 vector<Student> get_students()
 {
     vector<Student> students;
@@ -64,6 +66,8 @@ vector<Student> get_students()
     return students;
 }
 
+/// @brief Salva os alunos no arquivo students.
+/// @param students
 void save_students(vector<Student> students)
 {
     fstream file;
@@ -80,6 +84,8 @@ void save_students(vector<Student> students)
     file.close();
 }
 
+/// @brief Imprime os alunos e suas médias.
+/// @param students
 void print_students(vector<Student> students)
 {
     map<string, float> averages;
